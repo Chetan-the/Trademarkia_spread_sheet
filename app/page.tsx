@@ -29,7 +29,7 @@ interface SpreadsheetDoc {
   updatedAt: any;
 }
 
-/* ⭐ Helper to show time like "2m ago" */
+
 function getTimeAgo(timestamp: any) {
   if (!timestamp?.toDate) return "Just now";
 
@@ -155,7 +155,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
 
-      {/* HEADER */}
+
       <header className="bg-white border-b sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
@@ -276,7 +276,7 @@ export default function Home() {
         )}
       </main>
 
-      {/* CREATE DOCUMENT MODAL */}
+
       {showModal && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center">
 

@@ -16,7 +16,6 @@ export function indexToColLetter(index: number): string {
   return letter;
 }
 
-// Parses A1:B2 into an array of cell ids like ['A1', 'A2', 'B1', 'B2']
 export function parseRange(rangeStr: string): string[] {
   const parts = rangeStr.split(":");
   if (parts.length !== 2) return [];
@@ -56,7 +55,7 @@ export function evaluateFormula(
   const funcRegex = /(SUM|AVERAGE|COUNT|MAX|MIN|PRODUCT)\(([^)]+)\)/g;
   expression = expression.replace(funcRegex, (match, funcName, rangeGroup) => {
     const values: number[] = [];
-    
+
     // rangeGroup could be A1:B2 or A1,B2,C3
     const args = rangeGroup.split(",").map((s: string) => s.trim());
     for (const arg of args) {
@@ -119,7 +118,7 @@ export function evaluateFormula(
 }
 
 function resolveCellOrValue(
-  ref: string, 
+  ref: string,
   getCellValue: (id: string) => string | number,
   visited: Set<string>
 ): number {

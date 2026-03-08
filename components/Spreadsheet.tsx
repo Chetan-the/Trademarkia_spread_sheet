@@ -27,12 +27,12 @@ interface ViewerData {
   color: string;
   docId: string;
   currentCell: string | null;
-  lastActive: any; // Timestamp
+  lastActive: any;
 }
 
 const ROWS = 50;
-const COLS = 26; // A to Z
-const PRESENCE_TIMEOUT_MS = 60000; // 1 min
+const COLS = 26;
+const PRESENCE_TIMEOUT_MS = 60000;
 
 const USER_COLORS = [
   "#f87171", "#fb923c", "#fbbf24", "#34d399", "#2dd4bf",
@@ -407,7 +407,7 @@ export default function Spreadsheet({ docId }: { docId: string }) {
           </div>
         </div>
 
-        {/* ACTIONS & PRESENCE AVATARS */}
+
         <div className="flex items-center gap-4">
           <button
             onClick={() => {
@@ -474,7 +474,7 @@ export default function Spreadsheet({ docId }: { docId: string }) {
         </div>
       </div>
 
-      {/* FORMULA BAR */}
+
       <div className="flex items-center gap-2 border-b bg-white px-2 py-1.5 shrink-0 h-10">
         <div className="flex items-center justify-center w-8 text-gray-400 font-serif italic font-bold select-none text-sm">fx</div>
         <div className="w-12 text-center text-sm font-medium text-gray-600 border-r pr-2 shrink-0 select-none">
@@ -508,7 +508,6 @@ export default function Spreadsheet({ docId }: { docId: string }) {
         />
       </div>
 
-      {/* SPREADSHEET GRID */}
       <div className="flex-1 overflow-auto bg-gray-100 relative">
         <table className="border-collapse table-fixed bg-white m-0">
           <thead>
