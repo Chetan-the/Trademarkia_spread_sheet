@@ -124,7 +124,7 @@ export default function Home() {
             </div>
 
             <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-              Antigravity Sheets
+              Spread Sheets Testing
             </h1>
 
             <p className="text-gray-500 text-sm">
