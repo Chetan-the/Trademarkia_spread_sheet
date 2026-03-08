@@ -198,7 +198,7 @@ export default function Home() {
       <main className="max-w-6xl mx-auto px-6 py-8">
 
         <div className="flex justify-between mb-8">
-          <h2 className="text-2xl  bg-blue-600 hover:bg-blue-700 font-semibold">
+          <h2 className="text-2xl font-semibold">
             Recent Spreadsheets
           </h2>
 
